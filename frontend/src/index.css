@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.categories-grid, .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card, .product-card {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:150px;
+  font-weight:bold;
+  font-size:1.1rem;
+  border-radius:12px;
+  color:white;
+  cursor:pointer;
+  text-decoration:none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover, .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Vibrant colors for categories */
+.category-card.bedding { background:#FF6B6B; }
+.category-card.incense { background:#F06595; }
+.category-card.lamps { background:#845EF7; }
+.category-card.mats { background:#339AF0; }
+.category-card.jewellery { background:#51CF66; }
+.category-card.frames { background:#FCC419; color:#333; }
+.category-card.tipperary { background:#FF922B; }
+.category-card.newgrange { background:#20C997; }
+.category-card.furniture { background:#E64980; }
+
+/* Products cards all same color */
+.product-card { background:#4C6EF5; }
